@@ -1,3 +1,5 @@
+import DOCS from './help.html'
+
 addEventListener("fetch", (event) => {
   event.passThroughOnException();
   event.respondWith(handleRequest(event.request));
@@ -7,14 +9,14 @@ const dockerHub = "https://registry-1.docker.io";
 
 const routes = {
   // production
-  "docker.libcuda.so": dockerHub,
-  "quay.libcuda.so": "https://quay.io",
-  "gcr.libcuda.so": "https://gcr.io",
-  "k8s-gcr.libcuda.so": "https://k8s.gcr.io",
-  "k8s.libcuda.so": "https://registry.k8s.io",
-  "ghcr.libcuda.so": "https://ghcr.io",
-  "cloudsmith.libcuda.so": "https://docker.cloudsmith.io",
-  "ecr.libcuda.so": "https://public.ecr.aws",
+  "docker.haiyax.cn": dockerHub,
+  "quay.haiyax.cn": "https://quay.io",
+  "gcr.haiyax.cn": "https://gcr.io",
+  "k8s-gcr.haiyax.cn": "https://k8s.gcr.io",
+  "k8s.haiyax.cn": "https://registry.k8s.io",
+  "ghcr.haiyax.cn": "https://ghcr.io",
+  "cloudsmith.haiyax.cn": "https://docker.cloudsmith.io",
+  "ecr.haiyax.cn": "https://public.ecr.aws",
 
   // staging
   "docker-staging.libcuda.so": dockerHub,
